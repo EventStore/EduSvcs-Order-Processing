@@ -1,0 +1,15 @@
+POST http://localhost:3000/inventory/bulk-receive
+Content-Type: application/json
+
+{
+    "items": [
+        {
+            "sku": "123",
+            "quantity": 100
+        },
+        {
+            "sku": "456",
+            "quantity": 200
+        }
+    ]
+}

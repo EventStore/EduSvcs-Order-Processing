@@ -1,0 +1,2 @@
+run-esdb-server:
+	docker run -d -p 2113:2113 -p 1113:1113 -e "EVENTSTORE_CLUSTER_SIZE=1" -e "EVENTSTORE_RUN_PROJECTIONS=None" -e "EVENTSTORE_START_STANDARD_PROJECTIONS=false" -e "EVENTSTORE_INSECURE=true" -e "EVENTSTORE_ENABLE_ATOM_PUB_OVER_HTTP=true" --name esdb-order-processing eventstore/eventstore:23.10.2-jammy

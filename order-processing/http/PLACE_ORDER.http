@@ -1,0 +1,19 @@
+POST http://localhost:3000/orders/400/place
+Content-Type: application/json
+
+{
+    "from_cart_id": "456",
+    "customer_id": "123",
+    "items": [
+        {
+            "product_id": "123",
+            "quantity": 2,
+            "unitPrice": "50.00USD"
+        },
+        {
+            "product_id": "456",
+            "quantity": 5,
+            "unitPrice": "100.00USD"
+        }
+    ]
+}
